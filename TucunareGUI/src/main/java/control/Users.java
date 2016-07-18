@@ -39,6 +39,7 @@ public class Users {
 			following = dboUser.get("following").toString(); 
 		return following;
 	}
+	
 	//Localização geográfica do requester
 	public static String getLocationUser (String user) throws UnknownHostException{
 		DB db = Connect.getInstance().getDB("ghtorrent");
