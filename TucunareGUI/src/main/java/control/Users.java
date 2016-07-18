@@ -53,7 +53,8 @@ public class Users {
 			location = dboUser.get("location").toString();
 		return location; 
 	}
-	//Idade em dias do requester no GitHub
+	
+	//Recupera o período em dias da data de cadastro do usuário no github até os dias atuais.
 	public static String getAgeUser (String user) throws UnknownHostException{
 		DB db = Connect.getInstance().getDB("ghtorrent");
 		DBCollection users = db.getCollection("users");
